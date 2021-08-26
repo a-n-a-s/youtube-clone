@@ -1,0 +1,61 @@
+@import url("../../base.css");
+
+.video {
+  
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+}
+.video_top {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.video_top > img {
+  width: 100%;
+}
+
+.duartion {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+  padding: 0.2rem;
+  background: #080808ec;
+  border-radius: 3px;
+
+}
+.video_title {
+  margin-bottom: 0.1rem;
+  color: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+}
+.video_details {
+  display: flex;
+  align-items: center;
+}
+.video_details > span{
+  margin: 0 0.3rem ;
+}
+.video_channel {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.video_channel > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.video_channel > p {
+  margin-bottom: 0;
+}
+.video:hover{
+  background-color: rgb(54, 54, 54);
+}

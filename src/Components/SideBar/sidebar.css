@@ -1,0 +1,82 @@
+@import url("../../base.css");
+.sidebar {
+  background-color: var(--black-secondary);
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  padding-top: 2rem;
+  transition: transform 200ms ease-in;
+  position: sticky;
+  top: 10vh;
+  left: 0;
+}
+.sidebar > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+.sidebar a > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  color: #fff;
+}
+.sidebar.open{
+  transform: translateX(0%);
+}
+.sidebar > a {
+  color: #fff;
+}
+.sidebar > li > span {
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+.sidebar > a > li > span {
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+.sidebar > li:hover {
+  background-color: var(--border-color);
+}
+.sidebar > a > li:hover {
+  background-color: var(--border-color);
+}
+.sidebar > hr {
+  height: 2px !important;
+}
+
+@media screen and (max-width: 1120px) {
+  .sidebar {
+    width: 90px;
+  }
+  .sidebar > li {
+    justify-content: center;
+  }
+  .sidebar > a > li {
+    justify-content: center;
+  }
+  .sidebar > li > span {
+    display: none;
+  }
+  .sidebar>a > li > span {
+    display: none;
+  }
+}
+@media screen and (max-width : 520px) {
+    .sidebar{
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 999;
+    }
+}

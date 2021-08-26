@@ -1,0 +1,108 @@
+@import url(../../base.css);
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  background-color: var(--black-primary);
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+}
+.header_menu {
+  display: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.header_logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+.header > form {
+    
+  flex:0.6;
+  display: flex;
+  padding: 0.1rem;
+  border-radius: 3px;
+  border: 1.2px solid gray;
+  background-color: var(--black-secondary);
+}
+.header > form > input {
+  width: 100%;
+
+  border: none;
+  font-weight: 500;
+  background: transparent;
+  padding: 0.3rem;
+  color: var(--text-color);
+}
+.header > form > input:focus {
+  outline: none;
+}
+.header > form > button {
+  padding: 0 1.25rem;
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+}
+.header > form > button:focus {
+  border: none;
+}
+.header_icons {
+  flex: 0.15;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+.header_icons > img {
+  border-radius: 50%;
+  object-fit: contain;
+  margin-left: 5px;
+  width: 40px;
+  font-weight: bold;
+  
+}
+.hover_effect:hover{
+    transition: transform 200ms ease-in;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    padding: 1rem;
+  }
+  .header > form {
+    flex: 1;
+    margin:  0 1rem;
+  }
+  .header > form > input {
+    height: 80%;
+  }
+
+  .header_menu {
+    display: block;
+  }
+  .header_logo {
+    display: none;
+  }
+  .header > form > button{
+      padding: 0 0.75rem;
+  }
+  .header_icons > :not(img){
+      display: none;
+  }
+  
+  .header_icons > img{
+      width: 30px;
+      height: 30px;
+  }
+}

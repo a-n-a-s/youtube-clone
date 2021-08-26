@@ -1,0 +1,46 @@
+@import url(../../base.css);
+
+.videoMetaData_top > div > span {
+  cursor: pointer;
+}
+.videoMetaData_channel {
+  border-top: 0.2px solid var(--border-color);
+  border-bottom: 0.2px solid var(--border-color);
+}
+.videoMetaData_channel > div > img {
+  height: 50px;
+  width: 50px;
+}
+.videoMetaData_channel > button {
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none !important;
+  outline: none !important;
+}
+.videoMetaData_channel > button:hover {
+  color: #fff;
+}
+.btn-grey{
+  background-color: grey !important;
+  
+}
+.videoMetaData_channel > button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none Imp !important;
+}
+.videoMetaData_description {
+  font-size: 0.9rem;
+  white-space: pre-line;
+  border-bottom: 0.2px solid var(--border-color);
+}
+.videoMetaData_description .showMoreText{
+    text-decoration: none;
+    display: block;
+    margin: 1rem 0;
+    color: #fff;
+    font-weight: 500;
+}
